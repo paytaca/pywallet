@@ -93,7 +93,11 @@ def get_network(network='btctest'):
         return QtumMainNet
     elif network == "qtum_testnet" or network == "qtumtest":
         return QtumTestNet
-
+    elif network == "ptc" or network == "paytaca":
+        return PaytacaMainNet
+    elif network == "tptc" or network == "paytaca_testnet":
+        return PaytacaTestNet
+    
     return BitcoinTestNet
 
 
