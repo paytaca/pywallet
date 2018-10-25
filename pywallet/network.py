@@ -254,3 +254,31 @@ class QtumTestNet(object):
     EXT_PUBLIC_KEY = 0x043587CF
     EXT_SECRET_KEY = 0x04358394
     BIP32_PATH = "m/44'/88'/0'/"
+
+
+class PaytacaMainNet(object):
+    NAME = "Paytaca Main Net"
+    COIN = "PTC"
+    SCRIPT_ADDRESS = 0x05  # 777
+    # Used to create payment addresses
+    PUBKEY_ADDRESS = 0x00  # 776
+    # Used for WIF format
+    SECRET_KEY = 0x0307  # 775
+    # Used to serialize private BIP32 addresses
+    EXT_PUBLIC_KEY = 0x0B3439  # 777 * 3 * 5 * 7 * 9
+    EXT_SECRET_KEY = 0x0B3088  # 776 * 3 * 5 * 7 * 9
+    BIP32_PATH = "m/44'/0'/0'/"
+
+
+class PaytacaTestNet(object):
+    NAME = "Paytaca Test Net"
+    COIN = "tPTC"
+    SCRIPT_ADDRESS = 0x02A5  # 677
+    # Used to create payment addresses
+    PUBKEY_ADDRESS = 0x02A4  # 676
+    # Used for WIF format
+    SECRET_KEY = 0x02A3  # 675
+    # Used to serialize private BIP32 addresses
+    EXT_PUBLIC_KEY = 0x09C315  # 677 * 3 * 5 * 7 * 9
+    EXT_SECRET_KEY = 0x09BF64  # 676 * 3 * 5 * 7 * 9
+    BIP32_PATH = "m/44'/0'/0'/"
